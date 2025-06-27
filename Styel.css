@@ -1,0 +1,288 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+   .Index {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+
+    .Main {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      padding: 20px;
+      padding-bottom: 120px; /* space for nav */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+      text-align: center;
+     }
+
+     .About {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: white;
+      padding: 20px;
+      padding-bottom: 120px;
+      min-height: 100vh;
+     }
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+header h1 {
+  font-size: 2.5rem; /* slightly smaller for main page */
+}
+
+p, header p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+header p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  background-color: #00bfff;
+  color: #000;
+  font-weight: bold;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #009acd;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  margin: 30px 0;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+/* Iframe (for podcast video) */
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  background-color: #00bfff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #009acd;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Bottom Navigation - unified styling */
+.bottom-nav, nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  max-width: 600px;
+  background: rgba(40, 40, 40, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.4s ease;
+}
+
+nav.hide {
+  transform: translate(-50%, 100%);
+}
+
+.bottom-nav a, nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a svg, nav a svg {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+  transition: fill 0.3s ease;
+}
+
+.bottom-nav a.active, .bottom-nav a:hover,
+nav a.active, nav a:hover {
+  color: #00bfff;
+  font-weight: 700;
+}
+
+.bottom-nav a.active svg, .bottom-nav a:hover svg,
+nav a.active svg, nav a:hover svg {
+  fill: #00bfff;
+}
+/* about page */
+  .jump-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      padding: 10px 0;
+    }
+
+    .jump-links a {
+      text-decoration: none;
+      color: #00bfff;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: background 0.3s, color 0.3s;
+      font-weight: bold;
+    }
+
+    .jump-links a:hover {
+      background-color: #00bfff;
+      color: #000;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.03);
+      padding: 30px;
+      border-radius: 12px;
+      line-height: 1.7;
+      color: #ddd;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-content h2 {
+      color: #00bfff;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      scroll-margin-top: 80px;
+    }
+
+    .about-content p {
+      margin-bottom: 20px;
+    }
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  p, header p {
+    font-size: 1rem;
+  }
+
+  a.button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  .bottom-nav a, nav a {
+    font-size: 0.7rem;
+  }
+
+  .bottom-nav a svg, nav a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  nav, .bottom-nav {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  nav, .bottom-nav {
+    padding: 16px 30px;
+  }
+
+  .bottom-nav a, nav a {
+    font-size: 1rem;
+  }
+
+  .bottom-nav a svg, nav a svg {
+    width: 28px;
+    height: 28px;
+  }
+}
