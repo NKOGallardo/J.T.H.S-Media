@@ -681,8 +681,9 @@ body {
   border-radius: 10px;
   width: 120px;
   border: none;
+  padding-left: 12px;
   padding: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 120px;
 }
 
 .back-to-top:hover {
