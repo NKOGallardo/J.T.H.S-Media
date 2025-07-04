@@ -485,24 +485,24 @@ html {
 
 /* YouTube specific styling */
 .social-links a[href*="youtube"] {
-  background: linear-gradient(135deg, #ff0000, #cc0000);
-  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
+  background: #b76161;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .social-links a[href*="youtube"]:hover {
   background: linear-gradient(135deg, #cc0000, #ff0000);
-  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
 }
 
 /* TikTok specific styling */
 .social-links a[href*="tiktok"] {
-  background: linear-gradient(135deg, #000000, #ff0050);
-  box-shadow: 0 8px 25px rgba(255, 0, 80, 0.3);
+  background: #8b8b8b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .social-links a[href*="tiktok"]:hover {
-  background: linear-gradient(135deg, #ff0050, #000000);
-  box-shadow: 0 10px 30px rgba(255, 0, 80, 0.4);
+  background:#000000;
+  box-shadow: 0 0 30px rgba(41, 41, 41, 0.4);
 }
 
 /* Main Page Footer */
@@ -599,6 +599,17 @@ html {
     align-items: center;
   }
   
+
+  .social-links a[href*="youtube"] {
+  background: #ff0000;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a[href*="tiktok"] {
+  background: #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
   .social-links a {
     width: 100%;
     max-width: 250px;
