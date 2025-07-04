@@ -671,6 +671,24 @@ body {
   padding-bottom: 80px;
 }
 
+/* back to top */
+
+.back-to-top {
+  background-color: #1b2b11;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: 120px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.back-to-top:hover {
+  border: 1px solid greenyellow;
+}
+
 /* Articles Section */
 .articles-section {
   max-width: 1200px;
