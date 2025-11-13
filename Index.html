@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J.T.H.S Media - Podcast</title>
+    <link rel="icon" href="Images/Logo.jpeg" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -418,6 +419,7 @@
             <h1>Welcome to J.T.H.S Media</h1>
             <p>Conversations that inspire, educate, and entertain</p>
             <a href="#episodes" class="btn">Listen Now</a>
+            <a style="margin-top: 10px;" href="https://www.youtube.com/@JabulaniTechnicalH.SMedia" target="_blank" class="btn" style="margin-left: 1rem;">Subscribe on YouTube</a>
         </div>
     </section>
 
@@ -429,35 +431,36 @@
                 <div class="episode-image">🎧</div>
                 <h3>The Future of Digital Media</h3>
                 <div class="episode-meta">
-                    <span>📅 Nov 10, 2025</span>
-                    <span>⏱️ 45:32</span>
+                <span>📅 Nov 10, 2025</span>
+                <span>⏱️ 45:32</span>
                 </div>
                 <p>Exploring how technology is reshaping content creation and consumption in the modern age.</p>
-                <button class="play-btn" onclick="playEpisode('The Future of Digital Media', '45:32')">▶ Play Episode</button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="play-btn" style="text-decoration: none;">▶ Watch on YouTube</a>
             </div>
 
             <div class="episode-card">
                 <div class="episode-image">🎙️</div>
                 <h3>Storytelling in the Digital Age</h3>
                 <div class="episode-meta">
-                    <span>📅 Nov 3, 2025</span>
-                    <span>⏱️ 52:18</span>
+                <span>📅 Nov 3, 2025</span>
+                <span>⏱️ 52:18</span>
                 </div>
                 <p>How authentic narratives connect audiences across platforms and create lasting impact.</p>
-                <button class="play-btn" onclick="playEpisode('Storytelling in the Digital Age', '52:18')">▶ Play Episode</button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="play-btn" style="text-decoration: none;">▶ Watch on YouTube</a>
             </div>
 
             <div class="episode-card">
                 <div class="episode-image">🔊</div>
                 <h3>Building Creative Communities</h3>
                 <div class="episode-meta">
-                    <span>📅 Oct 27, 2025</span>
-                    <span>⏱️ 38:45</span>
+                <span>📅 Oct 27, 2025</span>
+                <span>⏱️ 38:45</span>
                 </div>
                 <p>The power of connection and collaboration in fostering innovation and growth.</p>
-                <button class="play-btn" onclick="playEpisode('Building Creative Communities', '38:45')">▶ Play Episode</button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="play-btn" style="text-decoration: none;">▶ Watch on YouTube</a>
             </div>
-        </div>
+            </div>
+
     </section>
 
     <!-- About Section -->
@@ -502,21 +505,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 J.T.H.S Media. All rights reserved.</p>
+        <p>&copy; 2025 J.T.H.S Media. All rights reserved. developed by <a style="text-decoration: none;" href="https://nkogallardo.link" target="_blank">Ntobeko</a></p>
     </footer>
-
-    <!-- Audio Player -->
-    <div class="audio-player" id="audioPlayer">
-        <div class="player-info">
-            <div class="player-controls">
-                <button onclick="togglePlay()">⏸</button>
-            </div>
-            <div>
-                <strong id="playerTitle">Episode Title</strong>
-                <p id="playerDuration" style="margin: 0; color: rgba(255,255,255,0.8);">00:00</p>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Smooth scrolling
@@ -537,26 +527,6 @@
 
         function closeMenu() {
             document.getElementById('navMenu').classList.remove('active');
-        }
-
-        // Audio player
-        let isPlaying = false;
-
-        function playEpisode(title, duration) {
-            const player = document.getElementById('audioPlayer');
-            const playerTitle = document.getElementById('playerTitle');
-            const playerDuration = document.getElementById('playerDuration');
-            
-            playerTitle.textContent = title;
-            playerDuration.textContent = duration;
-            player.classList.add('active');
-            isPlaying = true;
-        }
-
-        function togglePlay() {
-            isPlaying = !isPlaying;
-            const btn = document.querySelector('.player-controls button');
-            btn.textContent = isPlaying ? '⏸' : '▶';
         }
 
         // Form submission
