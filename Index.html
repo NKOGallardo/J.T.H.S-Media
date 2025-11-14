@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.T.H.S Media - Podcast</title>
+    <title>J.T.H.S Media</title>
     <link rel="icon" href="Images/Logo.jpeg" type="image/x-icon">
     <style>
         * {
@@ -494,10 +494,11 @@
         <h2>Get in Touch</h2>
         <div class="contact-content">
             <p>Have a story to share or want to be a guest? We'd love to hear from you.</p>
-            <form action="https://formspree.io/f/xanaqlyy" class="contact-form" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form action="https://formspree.io/f/mrbrpzae" method="POST" class="contact-form" >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="massage" placeholder="Your Message" required></textarea>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
